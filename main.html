@@ -1,52 +1,55 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<form method="post" for="laptop">
-	<label for="name">Name</label>
-	<input type="text" id="name" required></input>
 
-	<label for="email">Email</label>
-	<input type="email" id="email" required></input>
+  <form method="post">
+    <!-- Name -->
+    <label for="name">Name</label>
+    <input type="text" id="name" required />
 
-	<label for="male">Male</label>
-	<input type="radio" name="gender" required ></input>
+    <!-- Email -->
+    <label for="email">Email</label>
+    <input type="email" id="email" required />
 
-	<label for="female">Female</label>
-	<input type="radio" name="gender" required ></input>
+    <!-- Gender -->
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male" required />
 
-	
-	<select id="laptop">
-		<option>Dell</option>
-		<option>Apple</option>
-		<option>Acer</option>
-		
-	</select>
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female" required />
 
-	<label for="age">Age</label>
-	<input type="number" id="age" required></input>
+    <!-- Laptop Brands -->
+    <label for="laptop">Laptop Brands</label>
+    <select id="laptop">
+      <option value="dell">Dell</option>
+      <option value="apple">Apple</option>
+      <option value="acer">Acer</option>
+    </select>
 
-	<label for="dob">Date of Birth</label>
-	<input type="date" id="dob" required></input>
+    <!-- Age -->
+    <label for="age">Age</label>
+    <input type="number" id="age" required />
 
-	<label for="password">Password</label>
-	<input type="password" id="password" required></input>
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth</label>
+    <input type="date" id="dob" required />
 
-	<label for="	portfolio">Portfolio URL</label>
-	<input type="url" id="portfolio"></input>
+    <!-- Password -->
+    <label for="password">Password</label>
+    <input type="password" id="password" required />
 
-		</form>
+    <!-- Portfolio URL -->
+    <label for="portfolio">Portfolio URL</label>
+    <input type="url" id="portfolio" />
 
-	<button for="submit">Submit</button>
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+  </form>
+
+  <script type="text/javascript" src="./script.js"></script>
 
 </body>
-
 </html>
